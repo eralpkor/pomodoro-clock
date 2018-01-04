@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body{
+ background: #00c6ff;
+ /* fallback for old browsers */
+  font-family: 'Barlow Condensed', sans-serif;
+ background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+ /* Chrome 10-25, Safari 5.1-6 */
+
+ background: linear-gradient(to right, #0072ff, #00c6ff);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: white;
+}
+h1 {
+  font-size: 5em;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0%;
+}
+.btn{
+  width: 30px;
+  font-size: 1.2em;
+  color: white;
+  background: #60F0DD;
+}
+.btn-lg{
+  width: 75px;
+  height: 25px;
+  color: white;
+  background: #60F0DD;
+  border: 2px solid white;
+  border-radius: 15%;
+}
+button{
+  cursor: pointer;
+}
+.clock_main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.glass{
+  background: red;
+  width: 350px;
+  height: 350px;
+}
+.break{
+  margin: 10;
+  padding: 20px;
+  text-align: center;
+}
+.session{
+  margin: 10;
+  padding: 20px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.05);
+}
+.breakClass{
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.adjustTime{
+  margin: 0 5px 0 5px;
+  color: white;
+}
+#clock{
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#title{
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+#session{
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-size: 5em;
+  letter-spacing: 0.1em;
+}
+.pause-resume{
+  text-align: center;
+  font-size: 2em;
+  display: block;
+  margin: auto;
+}
+@media(max-width: 800px){
+  h1{
+    font-size: 3em;
+  }
+  .break{
+    padding: 10px;
+  }
+  .session{
+    padding: 10px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Clock</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="pomodoro.css">
+</head>
+
+<body>
+  <h1>Pomodoro Clock</h1>
+  <header>
+
+  </header>
+  <div class="clock_main">
+    <div class="break">
+      <p>BREAK TIME</p>
+      <button id="breakMinus" onclick="handlers.breakTimeDecrement()" class="btn">-</button>
+        <span id="breakTime" class="adjustTime">5</span>
+      <button id="breakPlus" onclick="handlers.breakTimeIncrement()" class="btn">+</button>
+    </div>
+    <div class="session">
+      <p>SESSION TIME</p>
+      <button id="sessionMinus" onclick="handlers.sessionTimeDecrement()" class="btn">-</button>
+        <span id="work" class="adjustTime">25</span>
+      <button id="sessionPlus" onclick="handlers.sessionTimeIncrement()" class="btn">+</button>
+    </div>
+  </div>
+
+  <section>
+    <div id="clock" class="clock">
+      <p id="title">SESSION</p>
+      <h1 id="session">25</h1>
+      <span class="glass"></span>
+    </div>
+  </section>
+  <div class="pause-resume">
+    <button id="resetBut" class="btn-lg" >STOP</button>
+  </div>
+
+  <script type="text/javascript" src="pomodoro.js"></script>
+  
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pomodoro Timer</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pomodoro.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <h1>Pomodoro Clock</h1>
+      <div>
+        <p>Break</p>
+        <button id="breakMinus" onclick="handlers.breakTimeDecrement()">-</button>
+        <p id="breakTime">3</p>
+        <button id="breakPlus" onclick="handlers.breakTimeIncrement()">+</button>
+      </div>
+      <div>
+        <p>
+          Session
+        </p>
+        <button id="sessionMinus">-</button>
+        <p class="sessionTime">5</p>
+        <button id="sessionPlus">+</button>
+      </div>
+    
+      <div class="timer">
+        <h1>SESSION</h1>
+        <h1 id="clock">5</h1>
+      </div>
+      <div>
+        <button id="startTimer">Start Timer</button>
+      </div>
+    
+    </div>
+  </div>
+  
+  <script src="pomodoro.js" defer></script>
+</body>
+
+</html> -->
